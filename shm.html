@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Harmonic Motion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main id="layout" class="layout">
+        <section id="controls" class="controls" aria-labelledby="form-title">
+            <h2 id="form-title">SHM Parameters</h2>
+
+            <form id="shmForm" novalidate>
+                <label for="radius">Radius (positive number)</label>
+                <input id="radius" type="number" value="1" min="1" required aria-required="true">
+
+                <label for="mode">Mode</label>
+                <select id="mode" required aria-required="true">
+                    <option value="1">Displacement</option>
+                    <option value="2">Velocity</option>
+                    <option value="3">Acceleration</option>
+                    <option value="4" selected>All</option>
+                </select>
+
+                <div class="button-row">
+                    <button type="submit" id="startBtn">Start Animation</button>
+                </div>
+
+                <p id="error" class="error" role="alert" aria-live="assertive"></p>
+            </form>
+            <div class="button-row">
+                <button type="button" id="resetBtn">Reset</button>
+            </div>
+            <details class="info-text">
+                <summary>About SHM</summary>
+                <p>Simple Harmonic Motion is visualized by projecting circular motion onto a line.
+                    The circle represents uniform circular motion.
+                <ul>
+                    <li>Displacement is the vertical projection of the moving point on the circle.</li>
+                    <li>Velocity is the slope of the displacement curve.</li>
+                    <li>Acceleration is the slope of the velocity curve.</li>
+                </ul>
+                The three curves show how these quantities evolve over time and how they relate in phase.</p>
+            </details>
+        </section>
+
+        <section id="canvas-area" class="canvas-area">
+            <div id="canvas-container"></div>
+        </section>
+    </main>
+
+    <script type="module" src="./scripts/app.js"></script>
+
+</body>
+
+</html>

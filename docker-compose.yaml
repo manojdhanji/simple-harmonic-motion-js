@@ -1,0 +1,7 @@
+name: "Simple-Harmonic-Motion-Js"
+services:
+  shm:
+    build: .
+    container_name: shm-app
+    ports:
+      - "80:80"
