@@ -41,7 +41,7 @@ This project was rebuilt with accessibility as a first‑class requirement:
 ---
 
 ## 📂 Project Structure
-
+\\\
 simple-harmonic-motion-js/
 ├── Dockerfile
 ├── README.md
@@ -53,7 +53,7 @@ simple-harmonic-motion-js/
 │   ├── app.js
 |   └── drawing.js
 └── shm.html
-
+\\\
 ---
 
 
@@ -76,7 +76,7 @@ http://localhost/shm.html
 ---
 
 ## 🔍 Architecture Diagram
-
+\\\
 ┌──────────────────────────────────────────────┐
 │                  UI Layer                    │
 │  - Accessible form controls                  │
@@ -106,5 +106,5 @@ http://localhost/shm.html
 │                 Deployment                   │
 │  Docker → nginx → static hosting             │
 └──────────────────────────────────────────────┘
-
+\\\
 
