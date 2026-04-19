@@ -24,7 +24,6 @@ Each graph is phase‑shifted by 90°, showing how derivatives of sinusoidal mot
 
 ###  Accessibility (WCAG + ARIA)
 This project was rebuilt with accessibility as a first‑class requirement:
-
 - Semantic HTML structure (`<main>`, `<section>`, `<form>`)
 - Properly labeled inputs and controls
 - Keyboard‑friendly interaction
@@ -54,22 +53,19 @@ simple-harmonic-motion-js/
 |   └── drawing.js
 └── shm.html
 ```
----
 
+---
 
 ## 🐳 Running with Docker
 
 Build the image:
-
 ```bash
 docker compose build --no-cache
 ```
-
 Run the container:
 ```bash
 docker compose up -d
 ```
-
 Visit:
 http://localhost/shm.html
 
@@ -108,3 +104,4 @@ http://localhost/shm.html
 └──────────────────────────────────────────────┘
 ```
 
+---
